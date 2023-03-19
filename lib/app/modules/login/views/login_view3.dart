@@ -14,6 +14,7 @@ class LoginView3 extends GetView<LoginController> {
     var passwordController = TextEditingController();
 
     final _formKey = GlobalKey<FormState>();
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Stack(children: [
@@ -133,22 +134,6 @@ class LoginView3 extends GetView<LoginController> {
             ]),
             SizedBox(
               height: 10,
-            ),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => ForgotPassword(),
-                    ));
-              },
-              child: Text(
-                "Forgot Password?",
-                style: TextStyle(
-                    color: Color(0xff292929),
-                    fontSize: 10,
-                    fontWeight: FontWeight.bold),
-              ),
             ),
             SizedBox(
               height: 10,

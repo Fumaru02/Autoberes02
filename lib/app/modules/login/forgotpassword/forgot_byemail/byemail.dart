@@ -1,13 +1,35 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ot_apps/app/data/bigText.dart';
-import 'package:ot_apps/app/modules/login/forgotpassword/forgot_byemail/verificationbyemail.dart';
 
-class ByEmail extends StatelessWidget {
+import '../../../../../auth_controller.dart';
+
+class ByEmail extends StatefulWidget {
   const ByEmail({super.key});
 
   @override
+  State<ByEmail> createState() => _ByEmailState();
+}
+
+class _ByEmailState extends State<ByEmail> {
+  @override
+  void initState() {
+    print("init State");
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    print("dispose");
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final authC = Get.find<AuthController>();
+    final controller = Get.put(AuthController());
+
     return Scaffold(
       body: Stack(children: [
         Positioned.fill(
@@ -85,6 +107,7 @@ class ByEmail extends StatelessWidget {
                           width: 294,
                           height: 20,
                           child: TextFormField(
+                            controller: AuthController.instance.emailController,
                             onFieldSubmitted: (value) {},
                             textAlign: TextAlign.left,
                             decoration: InputDecoration(
@@ -114,13 +137,8 @@ class ByEmail extends StatelessWidget {
                       elevation: 3,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15))),
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => VerificationByEmail(),
-                        ));
-                  },
+                  onPressed: () =>
+                      authC.resetPassword(controller.emailController.text),
                   child: Center(
                       child: Text(
                     "Next",

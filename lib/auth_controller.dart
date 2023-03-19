@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ot_apps/app/modules/login/views/login_view3.dart';
 import 'app/modules/HomeDetails/views/home_details_view.dart';
 import 'app/modules/login/views/login_view.dart';
 
@@ -101,4 +102,26 @@ class AuthController extends GetxController {
   }
 
   Future<void> logout() async => await auth.signOut();
+
+  void resetPassword(String email) async {
+    if (email != "" && GetUtils.isEmail(email)) {
+      try {
+        await auth.sendPasswordResetEmail(email: email);
+
+        Get.defaultDialog(
+            title: "Berhasil",
+            middleText: "kami telah mengirimkan password ke $email.",
+            onConfirm: () {
+              Get.offAll(LoginView3());
+            },
+            textConfirm: "Ok");
+      } catch (e) {
+        Get.defaultDialog(title: "Ada Kesalahan", middleText: "Reset Password");
+      }
+      ;
+    } else {
+      Get.defaultDialog(
+          title: "Ada Kesalahan", middleText: "Email tidak valid");
+    }
+  }
 }
