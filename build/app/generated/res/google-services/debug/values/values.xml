@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">4284738823-41et6f9ecaegq3v7iu3dl787skqvfn8c.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">4284738823</string>
+    <string name="google_api_key" translatable="false">AIzaSyAIssm-3oNphafThfr110aVWhNizqxwYY4</string>
+    <string name="google_app_id" translatable="false">1:4284738823:android:ffd019407cca405950e9a2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAIssm-3oNphafThfr110aVWhNizqxwYY4</string>
+    <string name="google_storage_bucket" translatable="false">autoberes-61646.appspot.com</string>
+    <string name="project_id" translatable="false">autoberes-61646</string>
+</resources>

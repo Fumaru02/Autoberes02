@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "4284738823",
+    "project_id": "autoberes-61646",
+    "storage_bucket": "autoberes-61646.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4284738823:android:ffd019407cca405950e9a2",
+        "android_client_info": {
+          "package_name": "com.otomotifapp.ot_apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "4284738823-41et6f9ecaegq3v7iu3dl787skqvfn8c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIssm-3oNphafThfr110aVWhNizqxwYY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "4284738823-41et6f9ecaegq3v7iu3dl787skqvfn8c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
