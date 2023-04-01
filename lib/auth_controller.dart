@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ot_apps/app/modules/HomeDetails/views/autoberes_color.dart';
 import 'package:ot_apps/app/modules/login/views/login_view2.dart';
 import 'app/modules/HomeDetails/views/home_details_view.dart';
 import 'app/modules/login/views/login_view.dart';
@@ -45,8 +46,11 @@ class AuthController extends GetxController {
         Get.offAll(HomeDetailsView());
       } else {
         Get.defaultDialog(
+          buttonColor: autoBeresColors.yellowColor,
+          backgroundColor: autoBeresColors.secondColor,
+          confirmTextColor: autoBeresColors.secondColor,
           title: 'Verification Email',
-          middleText: 'Verifikasi dulu!!!',
+          middleText: 'Ayo selesaikan 1 langkah lagi menuju login...',
           onConfirm: () => Get.back(),
         );
       }
@@ -81,6 +85,9 @@ class AuthController extends GetxController {
         Get.to(HomeDetailsView());
       } else {
         Get.defaultDialog(
+          buttonColor: autoBeresColors.yellowColor,
+          backgroundColor: autoBeresColors.secondColor,
+          confirmTextColor: autoBeresColors.secondColor,
           title: 'Verification Email',
           middleText: 'Verifikasi dulu!!!',
           onConfirm: () => Get.back(),
@@ -88,14 +95,14 @@ class AuthController extends GetxController {
       }
     } catch (e) {
       Get.snackbar("About Login", "Login Message",
-          backgroundColor: Colors.redAccent,
+          backgroundColor: autoBeresColors.yellowColor,
           snackPosition: SnackPosition.BOTTOM,
           titleText: Text(
             "Login Failed !",
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(color: Colors.black),
           ),
           messageText: Text(" Please enter ur email and password",
-              style: TextStyle(color: Colors.white))
+              style: TextStyle(color: Colors.black))
           // Text(
           //   e.toString(),
           //   style: TextStyle(color: Colors.white),

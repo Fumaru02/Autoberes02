@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/profilview.dart';
 import 'package:ot_apps/auth_controller.dart';
+import '../../../data/bigText.dart';
 import 'autoberes_color.dart';
 
 import '../controllers/home_details_controller.dart';
@@ -190,10 +191,10 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
                 SizedBox(
                   width: 55,
                 ),
-                Text("AutoBeres",
-                    style: GoogleFonts.roboto(
-                        textStyle: TextStyle(
-                            fontSize: 24, fontWeight: FontWeight.bold))),
+                BigTextSpan(
+                  text: "Auto",
+                  text2: "Beres",
+                ),
               ],
             ),
             backgroundColor: autoBeresColors.mainColor,
@@ -244,7 +245,7 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
                                     Icon(
                                       Icons.book_rounded,
                                       size: 32,
-                                      color: autoBeresColors.yellowColor,
+                                      color: autoBeresColors.secondColor,
                                     ),
                                   ],
                                 ),
@@ -261,7 +262,7 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
                                         "Modules",
                                         style: TextStyle(
                                             fontSize: 16,
-                                            color: autoBeresColors.secondColor,
+                                            color: autoBeresColors.yellowColor,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(
@@ -312,7 +313,7 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
                                     ),
                                     Image.asset(
                                       "assets/icons/remindericon.png",
-                                      scale: 2.3,
+                                      scale: 3,
                                     ),
                                   ],
                                 ),
@@ -329,7 +330,7 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
                                         "Reminder",
                                         style: TextStyle(
                                             fontSize: 16,
-                                            color: autoBeresColors.secondColor,
+                                            color: autoBeresColors.yellowColor,
                                             fontWeight: FontWeight.bold),
                                       ),
                                       Text(

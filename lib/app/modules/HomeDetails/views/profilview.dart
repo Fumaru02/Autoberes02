@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/profilePage.dart';
+import '../../../data/bigText.dart';
 import 'autoberes_color.dart';
 
 class ProfilView extends StatelessWidget {
@@ -21,16 +22,11 @@ class ProfilView extends StatelessWidget {
               fit: BoxFit.cover,
             )),
             automaticallyImplyLeading: false,
-            title: Row(
-              children: [
-                SizedBox(
-                  width: 90,
-                ),
-                Text("AutoBeres",
-                    style: GoogleFonts.roboto(
-                        textStyle: TextStyle(
-                            fontSize: 24, fontWeight: FontWeight.bold))),
-              ],
+            title: Center(
+              child: BigTextSpan(
+                text: "Auto",
+                text2: "Beres",
+              ),
             ),
             backgroundColor: autoBeresColors.mainColor,
             actions: [
@@ -49,7 +45,7 @@ class ProfilView extends StatelessWidget {
             child: Center(
               child: Stack(children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 15, top: 4),
+                  padding: const EdgeInsets.only(left: 0, top: 4),
                   child: Column(
                     children: [
                       Container(
