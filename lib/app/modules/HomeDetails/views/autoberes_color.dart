@@ -5,4 +5,5 @@ class autoBeresColors {
   static const secondColor = Color(0xffffffff);
   static const yellowColor = Color(0xffE5D00F);
   static const greyColor = Color(0xff808080);
+  static const greyButtonColor = Color(0xff5B5B5B);
 }
