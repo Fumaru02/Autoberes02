@@ -2,8 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ot_apps/app/modules/introduction/views/introduction.dart';
-import 'package:ot_apps/app/modules/login/views/login_view3.dart';
+import 'package:ot_apps/app/modules/login/views/login_view2.dart';
 import 'app/modules/HomeDetails/views/home_details_view.dart';
 import 'app/modules/login/views/login_view.dart';
 
@@ -30,7 +29,7 @@ class AuthController extends GetxController {
 
   _setInitialScreen(User? user) {
     if (user == null) {
-      return Get.offAll(() => Introduction(),
+      return Get.offAll(() => LoginView(),
           transition: Transition.fade, duration: Duration(seconds: 1));
     }
   }
@@ -92,13 +91,16 @@ class AuthController extends GetxController {
           backgroundColor: Colors.redAccent,
           snackPosition: SnackPosition.BOTTOM,
           titleText: Text(
-            "Login Failed Please enter ur email and password",
+            "Login Failed !",
             style: TextStyle(color: Colors.white),
           ),
-          messageText: Text(
-            e.toString(),
-            style: TextStyle(color: Colors.white),
-          ));
+          messageText: Text(" Please enter ur email and password",
+              style: TextStyle(color: Colors.white))
+          // Text(
+          //   e.toString(),
+          //   style: TextStyle(color: Colors.white),
+          // )
+          );
     }
   }
 
@@ -113,7 +115,7 @@ class AuthController extends GetxController {
             title: "Berhasil",
             middleText: "kami telah mengirimkan password ke $email.",
             onConfirm: () {
-              Get.offAll(LoginView3());
+              Get.offAll(LoginView2());
             },
             textConfirm: "Ok");
       } catch (e) {
