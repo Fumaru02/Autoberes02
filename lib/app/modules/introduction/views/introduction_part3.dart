@@ -1,19 +1,17 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:ot_apps/app/data/bigText.dart';
-import 'package:ot_apps/app/modules/home/views/home_view2.dart';
+import 'package:ot_apps/app/modules/introduction/controllers/home_controller.dart';
+import 'package:ot_apps/app/modules/login/views/login_view.dart';
 
-import '../controllers/home_controller.dart';
-
-class HomeView extends GetView<HomeController> {
+class IntroductionPart3 extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(children: [
         Positioned.fill(
-            child: Image.asset(
-          'assets/icons/bg.png',
+            child: Image(
+          image: AssetImage("assets/icons/bg.png"),
           fit: BoxFit.fill,
         )),
         Padding(
@@ -31,14 +29,16 @@ class HomeView extends GetView<HomeController> {
                 height: 50,
               ),
               BigTextSpan(
-                text: " Where ",
-                text2: "vehicle\n maintenance",
-                text3: " meets\n convenience ",
+                text: "Drive ",
+                color: Color(0xffFB5555),
+                text2: "worry-free\n",
+                text3: "with ",
+                text4: "our app",
               ),
               SizedBox(
                 height: 46,
               ),
-              Image.asset(width: 284, height: 250, "assets/icons/work2.png"),
+              Image.asset(width: 294, height: 253, "assets/icons/work4.png"),
               SizedBox(
                 height: 100,
               ),
@@ -52,16 +52,16 @@ class HomeView extends GetView<HomeController> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15))),
                   onPressed: () {
-                    Get.to(HomeView2(),
-                        transition: Transition.rightToLeftWithFade,
+                    Get.off(LoginView(),
+                        transition: Transition.fade,
                         duration: Duration(milliseconds: 500));
                   },
                   child: Center(
                       child: Text(
-                    "Next",
+                    "Get Started",
                     style: TextStyle(
                         color: Colors.white,
-                        fontSize: 24,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold),
                   )),
                 ),

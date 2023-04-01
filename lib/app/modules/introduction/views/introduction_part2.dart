@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ot_apps/app/data/bigText.dart';
-import 'package:ot_apps/app/modules/home/controllers/home_controller.dart';
-import 'package:ot_apps/app/modules/home/views/home_view3.dart';
+import 'package:ot_apps/app/modules/introduction/controllers/home_controller.dart';
+import 'package:ot_apps/app/modules/introduction/views/introduction_part3.dart';
 
-class HomeView2 extends GetView<HomeController> {
+class IntroductionPart2 extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +51,7 @@ class HomeView2 extends GetView<HomeController> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15))),
                   onPressed: () {
-                    Get.to(HomeView3(),
+                    Get.to(IntroductionPart3(),
                         transition: Transition.rightToLeftWithFade,
                         duration: Duration(milliseconds: 500));
                   },

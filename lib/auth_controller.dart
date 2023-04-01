@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ot_apps/app/modules/introduction/views/introduction.dart';
 import 'package:ot_apps/app/modules/login/views/login_view3.dart';
 import 'app/modules/HomeDetails/views/home_details_view.dart';
 import 'app/modules/login/views/login_view.dart';
@@ -29,7 +30,7 @@ class AuthController extends GetxController {
 
   _setInitialScreen(User? user) {
     if (user == null) {
-      return Get.offAll(() => LoginView(),
+      return Get.offAll(() => Introduction(),
           transition: Transition.fade, duration: Duration(seconds: 1));
     }
   }
