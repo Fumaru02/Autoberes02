@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ot_apps/app/modules/HomeDetails/views/autoberes_color.dart';
 import 'package:ot_apps/app/modules/register/views/register_view.dart';
 import '../controllers/login_controller.dart';
 import 'package:ot_apps/register_form.dart';
@@ -31,23 +32,26 @@ class LoginView extends GetView<LoginController> {
                     height: 80,
                   ),
                   Container(
-                    width: 225,
-                    height: 100,
+                    width: 380,
+                    height: 200,
                     child: Image.asset(
                       "assets/icons/logo3.png",
                     ),
                   ),
                   SizedBox(
-                    height: 50,
+                    height: 20,
                   ),
                   Text(
                     "Lets Get Started",
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                      color: Color(0xFF292929),
+                      color: autoBeresColors.yellowColor,
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
                     ),
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
                   Text(
                     "Ride with ease and convenience by \n using our vehicle service app!",
@@ -66,10 +70,13 @@ class LoginView extends GetView<LoginController> {
                                   controller.showButtonSignUp),
                         ),
                       ),
+                      SizedBox(
+                        height: 10,
+                      ),
                       Text(
                         "Or Use Instant Sign Up",
                         style: TextStyle(
-                            color: Color(0xff808080),
+                            color: Colors.white,
                             fontSize: 10,
                             fontWeight: FontWeight.bold),
                       ),
@@ -79,7 +86,7 @@ class LoginView extends GetView<LoginController> {
                         text: TextSpan(
                             text: "Already Have an Account? ",
                             style: TextStyle(
-                              color: Color(0xFF808080),
+                              color: Colors.white,
                               fontSize: 10,
                             ),
                             children: <TextSpan>[
@@ -90,7 +97,7 @@ class LoginView extends GetView<LoginController> {
                                       controller.navigateToSignInPage();
                                     },
                                   style: TextStyle(
-                                      color: Color(0xffFB5555),
+                                      color: autoBeresColors.yellowColor,
                                       fontWeight: FontWeight.bold))
                             ]),
                       )
@@ -153,7 +160,7 @@ class signUpButton extends StatelessWidget {
       height: 49,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xffFB6666),
+            backgroundColor: Color(0xffFFDC61),
             elevation: 3,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15))),

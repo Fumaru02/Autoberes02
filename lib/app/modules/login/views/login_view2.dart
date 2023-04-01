@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:ot_apps/app/modules/HomeDetails/views/autoberes_color.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/home_details_view.dart';
 import 'package:ot_apps/app/modules/login/forgotpassword/forgotpassword.dart';
 import 'package:ot_apps/auth_controller.dart';
@@ -34,8 +35,7 @@ class LoginView2 extends GetView<LoginController> {
                     ),
                     Image.asset(
                       "assets/icons/logo3.png",
-                      height: 43,
-                      width: 78,
+                      scale: 4,
                     ),
                     SizedBox(
                       height: 20,
@@ -43,7 +43,7 @@ class LoginView2 extends GetView<LoginController> {
                     Text(
                       "Hello Again!",
                       style: TextStyle(
-                        color: Color(0xFF292929),
+                        color: autoBeresColors.yellowColor,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
@@ -54,7 +54,7 @@ class LoginView2 extends GetView<LoginController> {
                     Text(
                       "Welcome Back You’ve been\n missed",
                       textAlign: TextAlign.center,
-                      style: TextStyle(color: Color(0xFF808080)),
+                      style: TextStyle(color: autoBeresColors.secondColor),
                     ),
                     SizedBox(
                       height: 25,
@@ -149,7 +149,7 @@ class LoginView2 extends GetView<LoginController> {
                     Text(
                       "Or?",
                       style: TextStyle(
-                          color: Color(0xff808080),
+                          color: autoBeresColors.secondColor,
                           fontSize: 10,
                           fontWeight: FontWeight.bold),
                     ),
@@ -185,7 +185,7 @@ class signInButton extends StatelessWidget {
       height: 49,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-            backgroundColor: Color(0xffFB6666),
+            backgroundColor: autoBeresColors.yellowColor,
             elevation: 3,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15))),
@@ -197,7 +197,7 @@ class signInButton extends StatelessWidget {
             child: Text(
           "Sign In",
           style: TextStyle(
-              color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+              color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold),
         )),
       ),
     );

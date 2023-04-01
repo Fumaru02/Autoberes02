@@ -31,8 +31,8 @@ class RegisterForm extends StatelessWidget {
                   height: 20,
                 ),
                 Image.asset(
-                  "assets/icons/logo2.png",
-                  scale: 10,
+                  "assets/icons/logo3.png",
+                  scale: 4,
                 ),
                 SizedBox(
                   height: 40,
