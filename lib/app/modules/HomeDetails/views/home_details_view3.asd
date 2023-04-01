@@ -9,7 +9,7 @@ import 'package:ot_apps/app/modules/HomeDetails/views/services/services2.dart';
 
 import '../controllers/home_details_controller.dart';
 
-class HomeDetailsView extends GetView<HomeDetailsController> {
+class HomeDetailsView3 extends GetView<HomeDetailsController> {
   @override
   Widget build(BuildContext context) {
     final mediaQueryWidth = MediaQuery.of(context).size.width;

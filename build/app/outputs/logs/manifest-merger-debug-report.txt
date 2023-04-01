@@ -3,6 +3,8 @@ application
 INJECTED from C:\Users\fadil\Documents\AutoBeres-main\android\app\src\main\AndroidManifest.xml:3:4-33:19
 MERGED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:cloud_firestore] C:\Users\fadil\Documents\AutoBeres-main\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:cloud_firestore] C:\Users\fadil\Documents\AutoBeres-main\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
 MERGED from [:firebase_core] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
@@ -13,6 +15,8 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\caches\transforms-3\db77909e02725043151ff28d3fe9f329\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:26:5-71:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:15:5-23:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:15:5-23:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:27:5-35:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fadil\.gradle\caches\transforms-3\730b76b55745f22bcf8606cd8a0c1a1e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fadil\.gradle\caches\transforms-3\730b76b55745f22bcf8606cd8a0c1a1e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\fadil\.gradle\caches\transforms-3\2b34a3ac986fd7efd50998ebd986caa4\transformed\jetified-firebase-appcheck-interop-16.1.0\AndroidManifest.xml:23:5-20
@@ -46,6 +50,7 @@ INJECTED from C:\Users\fadil\Documents\AutoBeres-main\android\app\src\main\Andro
 INJECTED from C:\Users\fadil\Documents\AutoBeres-main\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from C:\Users\fadil\Documents\AutoBeres-main\android\app\src\main\AndroidManifest.xml:1:1-34:12
 MERGED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] C:\Users\fadil\Documents\AutoBeres-main\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
 MERGED from [:path_provider_android] C:\Users\fadil\Documents\AutoBeres-main\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -54,6 +59,7 @@ MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\fadil\.gradle\ca
 MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\fadil\.gradle\caches\transforms-3\e1f53c96aa78f7b42431169b7cd59214\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\caches\transforms-3\db77909e02725043151ff28d3fe9f329\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:17:1-73:12
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:2:1-25:12
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:15:1-37:12
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fadil\.gradle\caches\transforms-3\730b76b55745f22bcf8606cd8a0c1a1e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\fadil\.gradle\caches\transforms-3\2b34a3ac986fd7efd50998ebd986caa4\transformed\jetified-firebase-appcheck-interop-16.1.0\AndroidManifest.xml:15:1-25:12
 MERGED from [com.google.firebase:firebase-common:20.3.0] C:\Users\fadil\.gradle\caches\transforms-3\b24238b145583e9bb28ada432bde27f7\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:15:1-39:12
@@ -110,6 +116,8 @@ INJECTED from C:\Users\fadil\Documents\AutoBeres-main\android\app\src\main\Andro
 INJECTED from C:\Users\fadil\Documents\AutoBeres-main\android\app\src\main\AndroidManifest.xml
 MERGED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:cloud_firestore] C:\Users\fadil\Documents\AutoBeres-main\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:cloud_firestore] C:\Users\fadil\Documents\AutoBeres-main\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -126,6 +134,8 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\caches\transforms-3\db77909e02725043151ff28d3fe9f329\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fadil\.gradle\caches\transforms-3\730b76b55745f22bcf8606cd8a0c1a1e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:20.0.0] C:\Users\fadil\.gradle\caches\transforms-3\730b76b55745f22bcf8606cd8a0c1a1e\transformed\jetified-firebase-auth-interop-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.1.0] C:\Users\fadil\.gradle\caches\transforms-3\2b34a3ac986fd7efd50998ebd986caa4\transformed\jetified-firebase-appcheck-interop-16.1.0\AndroidManifest.xml:18:5-20:41
@@ -208,10 +218,14 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\caches\transforms-3\db77909e02725043151ff28d3fe9f329\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:13:5-67
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:25:5-67
 	android:name
 		ADDED from C:\Users\fadil\Documents\AutoBeres-main\android\app\src\debug\AndroidManifest.xml:7:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 MERGED from [:cloud_firestore] C:\Users\fadil\Documents\AutoBeres-main\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 MERGED from [:cloud_firestore] C:\Users\fadil\Documents\AutoBeres-main\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 MERGED from [:firebase_core] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
@@ -220,6 +234,8 @@ MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\ca
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\caches\transforms-3\db77909e02725043151ff28d3fe9f329\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:64:9-70:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:16:9-22:19
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:16:9-22:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:28:9-34:19
 MERGED from [com.google.firebase:firebase-common:20.3.0] C:\Users\fadil\.gradle\caches\transforms-3\b24238b145583e9bb28ada432bde27f7\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:32:9-36:35
 MERGED from [com.google.firebase:firebase-common:20.3.0] C:\Users\fadil\.gradle\caches\transforms-3\b24238b145583e9bb28ada432bde27f7\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:32:9-36:35
 	android:exported
@@ -236,6 +252,12 @@ ADDED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\fireba
 		ADDED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
 		ADDED from [:firebase_auth] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [:firebase_database] C:\Users\fadil\Documents\AutoBeres-main\build\firebase_database\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
 ADDED from [:cloud_firestore] C:\Users\fadil\Documents\AutoBeres-main\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
@@ -264,6 +286,8 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\fadil\.gradle\caches\transforms-3\db77909e02725043151ff28d3fe9f329\transformed\jetified-firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\fadil\.gradle\caches\transforms-3\f4af55196bf2d6abc25303c082cd2181\transformed\jetified-grpc-android-1.50.2\AndroidManifest.xml:9:5-79
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\fadil\.gradle\caches\transforms-3\f4af55196bf2d6abc25303c082cd2181\transformed\jetified-grpc-android-1.50.2\AndroidManifest.xml:9:5-79
 	android:name
@@ -328,6 +352,12 @@ ADDED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradl
 		ADDED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:21:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-firestore:24.4.3] C:\Users\fadil\.gradle\caches\transforms-3\41698f2dbd5da996535897b76cce2796\transformed\jetified-firebase-firestore-24.4.3\AndroidManifest.xml:20:17-111
+meta-data#com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar
+ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-database:20.1.0] C:\Users\fadil\.gradle\caches\transforms-3\69d53eedac0925ac58cc10249c7aad25\transformed\jetified-firebase-database-20.1.0\AndroidManifest.xml:32:17-109
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:20.3.0] C:\Users\fadil\.gradle\caches\transforms-3\b24238b145583e9bb28ada432bde27f7\transformed\jetified-firebase-common-20.3.0\AndroidManifest.xml:25:9-30:39
 	android:authorities

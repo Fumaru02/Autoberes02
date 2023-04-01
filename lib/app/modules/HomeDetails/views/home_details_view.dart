@@ -1,17 +1,32 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:ot_apps/register_form.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/profilview.dart';
 import 'package:ot_apps/auth_controller.dart';
+import '../controllers/get_user_name.dart';
 import 'autoberes_color.dart';
 
 import '../controllers/home_details_controller.dart';
 
 // ignore: must_be_immutable
 class HomeDetailsView extends GetView<HomeDetailsController> {
-  String? email;
-  HomeDetailsView({Key? key, this.email}) : super(key: key);
+  HomeDetailsView({
+    Key? key,
+  }) : super(key: key);
+  final auth = Get.find<AuthController>();
+
+  //final screens = [
+  // HomeDetailsView(),
+  //   chatPage(),
+  //  Recentpage(),
+  //   FavoritePage(),
+//SettingPage(),
+  // ]
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +34,89 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
       home: SafeArea(
         top: true,
         child: Scaffold(
+          extendBody: true,
+          bottomNavigationBar: CurvedNavigationBar(
+              onTap: (index) {},
+              animationDuration: Duration(milliseconds: 300),
+              backgroundColor: Colors.transparent,
+              color: autoBeresColors.mainColor,
+              items: [
+                Container(
+                  height: 40,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.favorite,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        'Favorite',
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 40,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.history,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        'Recent',
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 40,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.home,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        'Home',
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 40,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.chat,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        'Chat',
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 40,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.settings,
+                        color: Colors.white,
+                      ),
+                      Text(
+                        'Setting',
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+              ]),
           drawerScrimColor: Colors.transparent,
           drawer: ClipRRect(
             borderRadius: BorderRadius.only(
@@ -56,15 +154,9 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
                             SizedBox(
                               height: 12,
                             ),
+                            Text('users.userName.value'),
                             Text(
-                              "Fadilah Umar",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20),
-                            ),
-                            Text(
-                              email ?? "",
+                              "",
                               style: TextStyle(
                                   color: Colors.grey,
                                   fontWeight: FontWeight.bold,
@@ -186,7 +278,7 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
             title: Row(
               children: [
                 SizedBox(
-                  width: 90,
+                  width: 70,
                 ),
                 Text("AutoBeres",
                     style: GoogleFonts.roboto(
