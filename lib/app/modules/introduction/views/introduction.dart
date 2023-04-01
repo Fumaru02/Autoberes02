@@ -26,7 +26,7 @@ class Introduction extends GetView<HomeController> {
               Align(
                   alignment: Alignment.topLeft,
                   child: Image.asset(
-                      width: 76, height: 42, "assets/icons/small-logo1.png")),
+                      width: 86, height: 74, "assets/icons/small-logo1.png")),
               SizedBox(
                 height: 50,
               ),
@@ -47,7 +47,7 @@ class Introduction extends GetView<HomeController> {
                 height: 57,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      backgroundColor: Color(0xffFB6666),
+                      backgroundColor: Color(0xffFFDC61),
                       elevation: 3,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(15))),
@@ -60,7 +60,7 @@ class Introduction extends GetView<HomeController> {
                       child: Text(
                     "Next",
                     style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black,
                         fontSize: 24,
                         fontWeight: FontWeight.bold),
                   )),

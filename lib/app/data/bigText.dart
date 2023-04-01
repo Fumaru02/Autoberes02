@@ -28,7 +28,7 @@ class BigTextSpan extends StatelessWidget {
               text: text,
               style: GoogleFonts.roboto(
                   textStyle: TextStyle(
-                color: Color(0xff292929),
+                color: Color(0xffFFFFFF),
                 fontSize: size,
                 fontWeight: FontWeight.bold,
               ))),
@@ -36,7 +36,7 @@ class BigTextSpan extends StatelessWidget {
               text: text2,
               style: GoogleFonts.roboto(
                   textStyle: TextStyle(
-                color: Color(0xffFB5555),
+                color: Color(0xffFFDC61),
                 fontSize: size,
                 fontWeight: FontWeight.bold,
               ))),
@@ -44,7 +44,7 @@ class BigTextSpan extends StatelessWidget {
               text: text3,
               style: GoogleFonts.roboto(
                   textStyle: TextStyle(
-                color: Color(0xff292929),
+                color: Color(0xffFFFFFF),
                 fontSize: size,
                 fontWeight: FontWeight.bold,
               ))),
@@ -52,7 +52,7 @@ class BigTextSpan extends StatelessWidget {
               text: text4,
               style: GoogleFonts.roboto(
                   textStyle: TextStyle(
-                color: Color(0xffFB5555),
+                color: Color(0xffFFDC61),
                 fontSize: size,
                 fontWeight: FontWeight.bold,
               ))),
