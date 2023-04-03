@@ -2,10 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/autoberes_color.dart';
-import 'package:ot_apps/app/modules/register/views/register_view.dart';
 import '../controllers/login_controller.dart';
-import 'package:ot_apps/register_form.dart';
-import 'package:ot_apps/app/modules/login/views/login_view2.dart';
 
 final controller = Get.put(LoginController());
 

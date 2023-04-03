@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/profilePage.dart';
 import '../../../data/bigText.dart';
 import 'autoberes_color.dart';
@@ -23,9 +22,17 @@ class ProfilView extends StatelessWidget {
             )),
             automaticallyImplyLeading: false,
             title: Center(
-              child: BigTextSpan(
-                text: "Auto",
-                text2: "Beres",
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 55,
+                  ),
+                  BigTextSpan(
+                    text: "Auto",
+                    text2: "Beres",
+                  ),
+                ],
               ),
             ),
             backgroundColor: autoBeresColors.mainColor,
@@ -91,7 +98,7 @@ class ProfilView extends StatelessWidget {
                             color: autoBeresColors.mainColor),
                         child: Center(
                           child: Text(
-                            "My Vehicle",
+                            "My Vehicles",
                             style:
                                 TextStyle(color: autoBeresColors.yellowColor),
                           ),

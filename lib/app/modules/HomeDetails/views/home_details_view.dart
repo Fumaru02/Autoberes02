@@ -2,7 +2,6 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:ot_apps/register_form.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/profilview.dart';
 import 'package:ot_apps/auth_controller.dart';
 import '../../../data/bigText.dart';

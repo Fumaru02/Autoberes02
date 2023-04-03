@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/autoberes_color.dart';
-import 'package:ot_apps/app/modules/HomeDetails/views/home_details_view.dart';
-import 'package:ot_apps/app/modules/login/forgotpassword/forgotpassword.dart';
 import 'package:ot_apps/auth_controller.dart';
 import '../controllers/login_controller.dart';
 

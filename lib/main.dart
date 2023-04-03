@@ -1,7 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ot_apps/app/data/splashscreen.dart';
 import 'package:ot_apps/app/modules/introduction/views/introduction.dart';
 import 'package:ot_apps/auth_controller.dart';
 import 'package:ot_apps/firebase_options.dart';

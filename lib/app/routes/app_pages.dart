@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:ot_apps/app/modules/HomeDetails/bindings/home_details_binding.dart';

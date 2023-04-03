@@ -1,7 +1,4 @@
 import 'package:get/get.dart';
-import 'package:ot_apps/app/modules/login/views/login_view.dart';
-import 'package:ot_apps/app/modules/login/views/login_view2.dart';
-import 'package:ot_apps/app/modules/register/views/register_view.dart';
 import 'package:ot_apps/register_form.dart';
 
 class LoginController extends GetxController {

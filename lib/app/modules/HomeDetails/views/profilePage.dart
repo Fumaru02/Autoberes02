@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../../data/bigText.dart';
+import '../../introduction/views/introduction_part2.dart';
 import 'autoberes_color.dart';
 import 'package:get/get.dart';
 
@@ -267,6 +269,162 @@ class DetailsVehicle extends StatefulWidget {
 class _DetailsVehicleState extends State<DetailsVehicle> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Stack(children: [
+        Positioned.fill(
+            child: Image(
+          image: AssetImage("assets/icons/bg.png"),
+          fit: BoxFit.fill,
+        )),
+        Center(
+          child: Stack(children: [
+            Column(
+              children: [
+                Stack(alignment: Alignment.bottomLeft, children: [
+                  Container(
+                    height: 265,
+                    width: 400,
+                    decoration: BoxDecoration(
+                        color: autoBeresColors.yellowColor,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(50),
+                            topRight: Radius.circular(50))),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 200),
+                    child: Image.asset(
+                      "assets/icons/halfvario.png",
+                    ),
+                  ),
+                ]),
+              ],
+            ),
+            Column(children: [
+              Expanded(
+                  child: ListView(
+                children: [
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: 10,
+                      ),
+                      InkWell(
+                        onTap: () => Get.back(),
+                        child: Icon(
+                          Icons.arrow_back,
+                          color: autoBeresColors.secondColor,
+                          size: 30,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        "My Vehicles",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 40, vertical: 60),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              "VARIO 160",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: autoBeresColors.secondColor,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "Motorcycles",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: autoBeresColors.yellowColor,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Text(
+                              "Scooter",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: autoBeresColors.secondColor,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "Model Type",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: autoBeresColors.yellowColor,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Text(
+                              "Automatic",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: autoBeresColors.secondColor,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "Transmission",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: autoBeresColors.yellowColor,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Text(
+                              "2022",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: autoBeresColors.secondColor,
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            Text(
+                              "Year Production",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: autoBeresColors.yellowColor,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              )),
+            ]),
+          ]),
+        ),
+      ]),
+    );
   }
 }
