@@ -57,21 +57,21 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: Column(
                   children: [
                     Text(
-                      "New Avanza",
+                      "New Honda Vario",
                       style: TextStyle(
                           color: autoBeresColors.secondColor,
                           fontWeight: FontWeight.bold,
                           fontSize: 20),
                     ),
                     Text(
-                      "Toyota",
+                      "Vario",
                       style: TextStyle(
                           color: autoBeresColors.yellowColor, fontSize: 14),
                     ),
                     SizedBox(
                       height: 26,
                     ),
-                    Image.asset("assets/icons/avanza.png"),
+                    Image.asset("assets/icons/vario.png"),
                     Center(
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -115,14 +115,14 @@ class _ProfilePageState extends State<ProfilePage> {
                             width: 46,
                           ),
                           Text(
-                            "MPV",
+                            "Scooter",
                             style: TextStyle(
                                 color: autoBeresColors.secondColor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
-                            width: 74,
+                            width: 54,
                           ),
                           Text(
                             "Gasoline",
@@ -220,24 +220,32 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     SizedBox(
-                      height: 16,
+                      height: 26,
                     ),
-                    Container(
-                      width: 244,
+                    SizedBox(
+                      width: 280,
                       height: 39,
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
-                          color: autoBeresColors.yellowColor),
-                      child: Center(
-                        child: Text(
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Color(0xffFFDC61),
+                            elevation: 3,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15))),
+                        onPressed: () {
+                          Get.to(DetailsVehicle(),
+                              transition: Transition.rightToLeftWithFade,
+                              duration: Duration(milliseconds: 500));
+                        },
+                        child: Center(
+                            child: Text(
                           "Details",
                           style: TextStyle(
-                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
                               fontSize: 15,
-                              color: autoBeresColors.mainColor),
-                        ),
+                              fontWeight: FontWeight.bold),
+                        )),
                       ),
-                    ),
+                    )
                   ],
                 ),
               ),
@@ -246,5 +254,19 @@ class _ProfilePageState extends State<ProfilePage> {
         ]),
       ],
     );
+  }
+}
+
+class DetailsVehicle extends StatefulWidget {
+  const DetailsVehicle({super.key});
+
+  @override
+  State<DetailsVehicle> createState() => _DetailsVehicleState();
+}
+
+class _DetailsVehicleState extends State<DetailsVehicle> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
   }
 }

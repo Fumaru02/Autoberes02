@@ -1,3 +1,4 @@
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:ot_apps/register_form.dart';
 import 'package:get/get.dart';
@@ -20,6 +21,61 @@ class HomeDetailsView extends GetView<HomeDetailsController> {
       home: SafeArea(
         top: true,
         child: Scaffold(
+          extendBody: true,
+          bottomNavigationBar: CurvedNavigationBar(
+              backgroundColor: Colors.transparent,
+              animationDuration: Duration(milliseconds: 325),
+              color: Colors.black,
+              onTap: (index) {
+                print(index);
+              },
+              items: [
+                Container(
+                  height: 40,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.history,
+                        color: autoBeresColors.secondColor,
+                      ),
+                      Text(
+                        "Recent",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 40,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.home,
+                        color: autoBeresColors.secondColor,
+                      ),
+                      Text(
+                        "Home",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  height: 40,
+                  child: Column(
+                    children: [
+                      Icon(
+                        Icons.settings,
+                        color: autoBeresColors.secondColor,
+                      ),
+                      Text(
+                        "Settings",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
+                  ),
+                ),
+              ]),
           drawerScrimColor: Colors.transparent,
           drawer: ClipRRect(
             borderRadius: BorderRadius.only(
