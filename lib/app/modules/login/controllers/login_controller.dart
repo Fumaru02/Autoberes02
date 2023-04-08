@@ -1,7 +1,12 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:ot_apps/register_form.dart';
 
 class LoginController extends GetxController {
+  GoogleSignIn _googleSignIn = GoogleSignIn();
+  FirebaseAuth _auth = FirebaseAuth.instance;
+
   final count = 0.obs;
   var showSignUpButton = false.obs;
 
@@ -38,4 +43,21 @@ class LoginController extends GetxController {
   @override
   void onClose() {}
   void increment() => count.value++;
+
+  void signInWithGoogle() async {
+    try {
+      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
+      if (googleUser == null) return;
+
+      final GoogleSignInAuthentication googleAuth =
+          await googleUser.authentication;
+
+      final credential = GoogleAuthProvider.credential(
+          accessToken: googleAuth.accessToken, idToken: googleAuth.idToken);
+
+      await _auth.signInWithCredential(credential);
+    } catch (error) {
+      print(error);
+    }
+  }
 }

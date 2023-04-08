@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:ot_apps/app/modules/HomeDetails/views/autoberes_color.dart';
 import 'package:ot_apps/app/modules/login/views/login_view2.dart';
 import 'app/modules/HomeDetails/views/home_details_view.dart';
@@ -18,8 +19,7 @@ class AuthController extends GetxController {
   //email,password,name...
   late Rx<User?> _user;
   FirebaseAuth auth = FirebaseAuth.instance;
-
-  var loginStatus = false.obs;
+  GoogleSignIn googleSignIn = GoogleSignIn();
 
   @override
   void onReady() {
@@ -84,7 +84,6 @@ class AuthController extends GetxController {
       UserCredential myUser = await auth.signInWithEmailAndPassword(
           email: email, password: password);
       if (myUser.user!.emailVerified) {
-        loginStatus(true);
         Get.to(HomeDetailsView());
       } else {
         Get.defaultDialog(

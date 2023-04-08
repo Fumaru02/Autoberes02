@@ -203,7 +203,7 @@ class signInButton extends StatelessWidget {
 }
 
 SizedBox loginButton(String textImgSrc, String txtButton,
-    [VoidCallback? callback]) {
+    [VoidCallback? signInWithGoogle]) {
   return SizedBox(
     height: 70,
     width: 310,
@@ -216,7 +216,7 @@ SizedBox loginButton(String textImgSrc, String txtButton,
               shadowColor: Colors.grey.withOpacity(0.3),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(15)))),
-          onPressed: callback,
+          onPressed: signInWithGoogle,
           child: Row(
             children: [
               Container(
