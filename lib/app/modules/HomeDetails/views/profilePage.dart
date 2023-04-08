@@ -289,6 +289,13 @@ class _DetailsVehicleState extends State<DetailsVehicle> {
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(50),
                             topRight: Radius.circular(50))),
+                    child: Padding(
+                      padding:
+                          const EdgeInsets.only(top: 70, right: 8, left: 8),
+                      child: Text(
+                          "          Honda Vario 160 adalah sepeda motor skuter otomatis yang dilengkapi dengan mesin 160cc. Sepeda motor ini memiliki kemampuan akselerasi yang baik, mampu mencapai kecepatan maksimum sekitar 120 km/jam, serta dilengkapi dengan fitur-fitur modern seperti lampu LED, panel instrumen digital, dan sistem pengereman cakram ABS.     \n            Selain itu, Honda Vario 160 juga memiliki stabilitas yang baik dan nyaman digunakan untuk perjalanan jarak jauh maupun dalam kota.",
+                          textAlign: TextAlign.justify),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 200),

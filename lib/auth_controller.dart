@@ -19,6 +19,8 @@ class AuthController extends GetxController {
   late Rx<User?> _user;
   FirebaseAuth auth = FirebaseAuth.instance;
 
+  var loginStatus = false.obs;
+
   @override
   void onReady() {
     super.onReady();
@@ -82,6 +84,7 @@ class AuthController extends GetxController {
       UserCredential myUser = await auth.signInWithEmailAndPassword(
           email: email, password: password);
       if (myUser.user!.emailVerified) {
+        loginStatus(true);
         Get.to(HomeDetailsView());
       } else {
         Get.defaultDialog(

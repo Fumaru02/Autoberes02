@@ -189,7 +189,7 @@
     },
     {
       "name": "google_sign_in",
-      "rootUri": "file:///C:/Users/fadil/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in-6.0.1",
+      "rootUri": "file:///C:/Users/fadil/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in-6.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -446,7 +446,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2023-04-03T04:31:04.331398Z",
+  "generated": "2023-04-04T16:34:09.063326Z",
   "generator": "pub",
   "generatorVersion": "2.19.6"
 }

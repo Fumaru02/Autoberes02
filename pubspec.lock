@@ -244,10 +244,10 @@ packages:
     dependency: "direct main"
     description:
       name: google_sign_in
-      sha256: "71c5311a19a2406498028a54fcac81351827297fa8cf5abbf51b7e0fa1bc64f5"
+      sha256: "750d08ffb4cd469f13068d15844ffd1d60c7ac1ca3c815918ba4ce4af22a2ddb"
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.1"
+    version: "6.0.2"
   google_sign_in_android:
     dependency: transitive
     description:
